@@ -7,6 +7,6 @@ The frontend was made using angular-2 and scala was used as backend(scalatra web
 -----------------
 
 <div align="center">
-  <img src="https://github.com/jrabello/freq-lang/raw/master/img/state.png">
+  <img src="https://github.com/jrabello/freq-lang/raw/master/img/sc.png">
 </div>
 
