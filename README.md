@@ -4,3 +4,9 @@ This game was created to make easier the process of learning another language, b
 
 The frontend was made using angular-2 and scala was used as backend(scalatra web-framework), angular consumes a REST api and scala provides data to the game.
 
+-----------------
+
+<div align="center">
+  <img src="https://github.com/jrabello/freq-lang/raw/master/img/state.png">
+</div>
+
