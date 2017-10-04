@@ -1,0 +1,19 @@
+<div id="container" *ngIf="game">
+  <md-card id="card-container">
+    <!-- question -->
+    <md-card-title>
+      <h3>{{game.question}}</h3>
+    </md-card-title>
+    <!-- grid -->
+    <md-card-content>
+      <div class="grid grid-pad">
+        <a *ngFor="let answer of game.answers" class="col-1-4" (click)="onSelect(answer)">
+          <div class="module" [class.btn-checked-right]="answer === user.getAnswer().getData() && user.getAnswer().isCorrect() === true"
+            [class.btn-checked-wrong]="answer === user.getAnswer().getData() && user.getAnswer().isCorrect() === false">
+            <h4>{{answer}}</h4>
+          </div>
+        </a>
+      </div>
+    </md-card-content>
+  </md-card>
+</div>

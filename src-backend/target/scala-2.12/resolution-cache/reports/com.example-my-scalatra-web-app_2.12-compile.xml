@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.example"
+		module="my-scalatra-web-app_2.12"
+		revision="0.1.0-SNAPSHOT"
+		conf="compile"
+		confs="compile, runtime, test, provided, optional, container, jetty, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20171003181125"/>
+	<dependencies>
+		<module organisation="org.json4s" name="json4s-jackson_2.12">
+			<revision name="3.5.3" status="release" pubdate="20170728211130" resolver="public" artresolver="public" homepage="https://github.com/json4s/json4s" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2022" time="594" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-jackson_2.12/ivy-3.5.3.xml" searched="true" original-local-location="/home/jrabello/.ivy2/cache/org.json4s/json4s-jackson_2.12/ivy-3.5.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3.pom"/>
+				<caller organisation="com.example" name="my-scalatra-web-app_2.12" conf="compile" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="json4s-jackson_2.12" type="jar" ext="jar" status="successful" details="" size="40086" time="725" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-jackson_2.12/jars/json4s-jackson_2.12-3.5.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.8.4" status="release" pubdate="20161014005229" resolver="public" artresolver="public" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="5426" time="535" location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.4.xml" searched="true" original-local-location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.pom"/>
+				<caller organisation="org.json4s" name="json4s-jackson_2.12" conf="default, compile, runtime, master" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="3.5.3"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="successful" details="" size="1234984" time="1605" location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.8.4" status="release" pubdate="20161014004821" resolver="public" artresolver="public" homepage="https://github.com/FasterXML/jackson-core" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="5415" time="533" location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.4.xml" searched="true" original-local-location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="successful" details="" size="281079" time="2065" location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.8.0" status="release" pubdate="20160704022053" resolver="public" artresolver="public" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1848" time="531" location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.0.xml" searched="true" original-local-location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.4"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="successful" details="" size="55784" time="660" location="/home/jrabello/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.8.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.12">
+			<revision name="3.5.3" status="release" pubdate="20170728211108" resolver="public" artresolver="public" homepage="https://github.com/json4s/json4s" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2367" time="551" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-core_2.12/ivy-3.5.3.xml" searched="true" original-local-location="/home/jrabello/.ivy2/cache/org.json4s/json4s-core_2.12/ivy-3.5.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.5.3/json4s-core_2.12-3.5.3.pom"/>
+				<caller organisation="org.json4s" name="json4s-jackson_2.12" conf="default, compile, runtime, master" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="3.5.3"/>
+				<caller organisation="org.scalatra" name="scalatra-json_2.12" conf="default, compile, runtime, master" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="json4s-core_2.12" type="jar" ext="jar" status="successful" details="" size="489399" time="1847" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-core_2.12/jars/json4s-core_2.12-3.5.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.5.3/json4s-core_2.12-3.5.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.5.0" status="release" pubdate="20161104121801" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3249" time="0" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-core_2.12/ivy-3.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.5.0/json4s-core_2.12-3.5.0.pom"/>
+				<evicted-by rev="3.5.3"/>
+				<caller organisation="org.scalatra" name="scalatra-json_2.12" conf="default, compile, runtime, master" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="2.5.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-scalap_2.12">
+			<revision name="3.5.3" status="release" pubdate="20170728211056" resolver="public" artresolver="public" homepage="https://github.com/json4s/json4s" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1651" time="535" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-scalap_2.12/ivy-3.5.3.xml" searched="true" original-local-location="/home/jrabello/.ivy2/cache/org.json4s/json4s-scalap_2.12/ivy-3.5.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.5.3/json4s-scalap_2.12-3.5.3.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="3.5.0"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="3.5.3"/>
+				<artifacts>
+					<artifact name="json4s-scalap_2.12" type="jar" ext="jar" status="successful" details="" size="346628" time="877" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-scalap_2.12/jars/json4s-scalap_2.12-3.5.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.5.3/json4s-scalap_2.12-3.5.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.5.0" status="release" pubdate="20161104121500" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2657" time="0" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-scalap_2.12/ivy-3.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.5.0/json4s-scalap_2.12-3.5.0.pom"/>
+				<evicted-by rev="3.5.3"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="3.5.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.12">
+			<revision name="3.5.3" status="release" pubdate="20170728211043" resolver="public" artresolver="public" homepage="https://github.com/json4s/json4s" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1642" time="561" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-ast_2.12/ivy-3.5.3.xml" searched="true" original-local-location="/home/jrabello/.ivy2/cache/org.json4s/json4s-ast_2.12/ivy-3.5.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.5.3/json4s-ast_2.12-3.5.3.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="3.5.0"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="3.5.3"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.12" type="jar" ext="jar" status="successful" details="" size="83376" time="543" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-ast_2.12/jars/json4s-ast_2.12-3.5.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.5.3/json4s-ast_2.12-3.5.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.5.0" status="release" pubdate="20161104121507" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2648" time="0" location="/home/jrabello/.ivy2/cache/org.json4s/json4s-ast_2.12/ivy-3.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.5.0/json4s-ast_2.12-3.5.0.pom"/>
+				<evicted-by rev="3.5.3"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="3.5.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatra" name="scalatra-json_2.12">
+			<revision name="2.5.1" status="release" pubdate="20170602150225" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatra.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<license name="BSD" url="http://github.com/scalatra/scalatra/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3258" time="0" location="/home/jrabello/.ivy2/cache/org.scalatra/scalatra-json_2.12/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatra/scalatra-json_2.12/2.5.1/scalatra-json_2.12-2.5.1.pom"/>
+				<caller organisation="com.example" name="my-scalatra-web-app_2.12" conf="compile" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalatra-json_2.12" type="jar" ext="jar" status="no" details="" size="52107" time="0" location="/home/jrabello/.ivy2/cache/org.scalatra/scalatra-json_2.12/jars/scalatra-json_2.12-2.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatra/scalatra-json_2.12/2.5.1/scalatra-json_2.12-2.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.8" status="release" pubdate="20150826082928" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4254" time="0" location="/home/jrabello/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="3.5.0"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="3.5.3"/>
+				<artifacts>
+					<artifact name="paranamer" type="bundle" ext="jar" status="no" details="" size="34654" time="0" location="/home/jrabello/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatra" name="scalatra_2.12">
+			<revision name="2.5.1" status="release" pubdate="20170602150049" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatra.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="3">
+				<license name="BSD" url="http://github.com/scalatra/scalatra/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="4737" time="0" location="/home/jrabello/.ivy2/cache/org.scalatra/scalatra_2.12/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatra/scalatra_2.12/2.5.1/scalatra_2.12-2.5.1.pom"/>
+				<caller organisation="com.example" name="my-scalatra-web-app_2.12" conf="compile" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.scalatra" name="scalatra-json_2.12" conf="default, compile, runtime, master" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="scalatra_2.12" type="jar" ext="jar" status="no" details="" size="927645" time="0" location="/home/jrabello/.ivy2/cache/org.scalatra/scalatra_2.12/jars/scalatra_2.12-2.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatra/scalatra_2.12/2.5.1/scalatra_2.12-2.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
+			<revision name="1.0.4" status="release" pubdate="20161028211045" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2785" time="0" location="/home/jrabello/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.pom"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" status="no" details="" size="204313" time="0" location="/home/jrabello/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.5" status="release" pubdate="20161013165341" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12365" time="0" location="/home/jrabello/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="479881" time="0" location="/home/jrabello/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="eu.medsea.mimeutil" name="mime-util">
+			<revision name="2.1.3" status="release" pubdate="20100105062400" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.medsea.eu/mime-util/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3581" time="0" location="/home/jrabello/.ivy2/cache/eu.medsea.mimeutil/mime-util/ivy-2.1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/eu/medsea/mimeutil/mime-util/2.1.3/mime-util-2.1.3.pom"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="mime-util" type="bundle" ext="jar" status="no" details="" size="119180" time="0" location="/home/jrabello/.ivy2/cache/eu.medsea.mimeutil/mime-util/bundles/mime-util-2.1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/eu/medsea/mimeutil/mime-util/2.1.3/mime-util-2.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.juniversalchardet" name="juniversalchardet">
+			<revision name="1.0.3" status="release" pubdate="20110919143824" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://juniversalchardet.googlecode.com/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Mozilla Public License 1.1 (MPL 1.1)" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<metadata-artifact status="no" details="" size="2716" time="0" location="/home/jrabello/.ivy2/cache/com.googlecode.juniversalchardet/juniversalchardet/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.pom"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="juniversalchardet" type="jar" ext="jar" status="no" details="" size="220813" time="0" location="/home/jrabello/.ivy2/cache/com.googlecode.juniversalchardet/juniversalchardet/jars/juniversalchardet-1.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.clapper" name="grizzled-slf4j_2.12">
+			<revision name="1.3.0" status="release" pubdate="20161103212906" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/grizzled-slf4j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="BSD" url="http://software.clapper.org/grizzled-slf4j/license.html"/>
+				<metadata-artifact status="no" details="" size="2980" time="0" location="/home/jrabello/.ivy2/cache/org.clapper/grizzled-slf4j_2.12/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.12/1.3.0/grizzled-slf4j_2.12-1.3.0.pom"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="grizzled-slf4j_2.12" type="jar" ext="jar" status="no" details="" size="7567" time="0" location="/home/jrabello/.ivy2/cache/org.clapper/grizzled-slf4j_2.12/jars/grizzled-slf4j_2.12-1.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.12/1.3.0/grizzled-slf4j_2.12-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.21" status="release" pubdate="20160404153640" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5199" time="0" location="/home/jrabello/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom"/>
+				<caller organisation="eu.medsea.mimeutil" name="mime-util" conf="compile, runtime" rev="1.5.6" rev-constraint-default="1.5.6" rev-constraint-dynamic="1.5.6" callerrev="2.1.3"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.12" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.3.0"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41071" time="0" location="/home/jrabello/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.5.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="eu.medsea.mimeutil" name="mime-util" conf="compile, runtime" rev="1.5.6" rev-constraint-default="1.5.6" rev-constraint-dynamic="1.5.6" callerrev="2.1.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.12" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.3.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatra" name="scalatra-common_2.12">
+			<revision name="2.5.1" status="release" pubdate="20170602150012" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatra.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD" url="http://github.com/scalatra/scalatra/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2786" time="0" location="/home/jrabello/.ivy2/cache/org.scalatra/scalatra-common_2.12/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatra/scalatra-common_2.12/2.5.1/scalatra-common_2.12-2.5.1.pom"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="scalatra-common_2.12" type="jar" ext="jar" status="no" details="" size="15299" time="0" location="/home/jrabello/.ivy2/cache/org.scalatra/scalatra-common_2.12/jars/scalatra-common_2.12-2.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatra/scalatra-common_2.12/2.5.1/scalatra-common_2.12-2.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="twirl-api_2.12">
+			<revision name="1.3.7" status="release" pubdate="20170913175358" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2941" time="0" location="/home/jrabello/.ivy2/cache/com.typesafe.play/twirl-api_2.12/ivy-1.3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.7/twirl-api_2.12-1.3.7.pom"/>
+				<caller organisation="com.example" name="my-scalatra-web-app_2.12" conf="compile" rev="1.3.7" rev-constraint-default="1.3.7" rev-constraint-dynamic="1.3.7" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="twirl-api_2.12" type="jar" ext="jar" status="no" details="" size="76118" time="0" location="/home/jrabello/.ivy2/cache/com.typesafe.play/twirl-api_2.12/jars/twirl-api_2.12-1.3.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.7/twirl-api_2.12-1.3.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.0.6" status="release" pubdate="20161101122105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2987" time="0" location="/home/jrabello/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="3.5.0"/>
+				<caller organisation="com.typesafe.play" name="twirl-api_2.12" conf="default, compile, runtime, master" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.3.7"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="3.5.3"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="no" details="" size="547860" time="0" location="/home/jrabello/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.3" status="release" pubdate="20170725074730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.3/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2471" time="0" location="/home/jrabello/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.3.0"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.5.0"/>
+				<caller organisation="com.typesafe.play" name="twirl-api_2.12" conf="default, compile, runtime, master" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.3.7"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.5.3"/>
+				<caller organisation="org.json4s" name="json4s-jackson_2.12" conf="default, compile, runtime, master" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.5.3"/>
+				<caller organisation="com.example" name="my-scalatra-web-app_2.12" conf="compile" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.scalatra" name="scalatra_2.12" conf="default, compile, runtime, master" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="2.5.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.0.6"/>
+				<caller organisation="org.scalatra" name="scalatra-common_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="2.5.1"/>
+				<caller organisation="org.json4s" name="json4s-scalap_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.5.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.0.4"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.5.3"/>
+				<caller organisation="org.scalatra" name="scalatra-json_2.12" conf="default, compile, runtime, master" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="2.5.1"/>
+				<caller organisation="org.json4s" name="json4s-scalap_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.5.3"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.5.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5246851" time="0" location="/home/jrabello/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
